@@ -9,7 +9,7 @@ import org.lwjgl.glfw.GLFW;
 
 public class Fly extends Module {
 
-    ModeSetting modeSetting = new ModeSetting("Mode", "Vanilla", "Vanilla", "Hypixel", "Vulcan");
+    ModeSetting modeSetting = new ModeSetting("Mode", "Vanilla", "Vanilla");
     NumberSetting speed = new NumberSetting("Speed", 0.01, 1, 0.2, 0.01);
     BooleanSetting warn = new BooleanSetting("Warn", true);
 

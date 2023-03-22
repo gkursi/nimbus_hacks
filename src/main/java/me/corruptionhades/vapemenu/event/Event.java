@@ -10,20 +10,20 @@ public abstract class Event {
     /**
      *
      * Main events you may need:
-     *
+     * <p>
      * Minecraft:
      * - EventKeyboard
      * - EventMiddleClick
      * - EventTick
-     *
+     * <p>
      * EntityPlayerSP:
      * - EventUpdate
      * - EventPreMotionUpdates
      * - EventPostMotionUpdates
-     *
+     * <p>
      * GuiIngame:
      * - EventRender2D
-     *
+     * <p>
      * EntityRenderer:
      * - EventRender3D
      *

@@ -21,7 +21,7 @@ public class VapeMenu implements ModInitializer {
     private static final VapeMenu INSTANCE = new VapeMenu();
 
     // The Client name
-    private static final String name = "Client_Name";
+    private static final String name = "Nimbus Hacks";
     // Chat Prefix
     private static final String prefix = "&7[&4" + name + "&7] &a";
     // Command prefix

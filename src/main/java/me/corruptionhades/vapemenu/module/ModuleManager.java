@@ -2,8 +2,11 @@ package me.corruptionhades.vapemenu.module;
 
 import me.corruptionhades.vapemenu.module.impl.combat.Reach;
 import me.corruptionhades.vapemenu.module.impl.misc.Plugins;
+import me.corruptionhades.vapemenu.module.impl.misc.TexturePack;
 import me.corruptionhades.vapemenu.module.impl.movement.Fly;
 import me.corruptionhades.vapemenu.module.impl.movement.Timer;
+import me.corruptionhades.vapemenu.module.impl.nimorant.NoStartBorder;
+import me.corruptionhades.vapemenu.module.impl.nimorant.TriggerBot;
 import me.corruptionhades.vapemenu.module.impl.render.Arraylist;
 
 import java.util.ArrayList;
@@ -26,6 +29,9 @@ public class ModuleManager {
         add(new Fly());
         add(new Arraylist());
         add(new Timer());
+        add(new NoStartBorder());
+        add(new TriggerBot());
+        add(new TexturePack());
     }
 
     public void add(Module m) {

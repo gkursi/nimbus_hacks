@@ -6,7 +6,8 @@ public enum Category {
     RENDER("Render"),
     PLAYER("Player"),
     MISC("Misc"),
-    HIDDEN("Hidden");
+    HIDDEN("Hidden"),
+    NIMORANT("Nimorant");
 
     public String name;
 

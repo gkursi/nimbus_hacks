@@ -117,6 +117,6 @@ public abstract class Module {
 
     protected void sendMsg(String message) {
         if(mc.player == null) return;
-        mc.player.sendMessage(Text.of(message.replace("&", "§")));
+        mc.player.sendMessage(Text.of("§c[§dNimbus Hacks§c]§f " + message.replace("&", "§")));
     }
 }
