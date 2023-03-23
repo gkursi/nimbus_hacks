@@ -50,7 +50,7 @@ public class Theme {
         MODULE_ENABLED_BG = new Color(36, 34, 38);
         MODULE_DISABLED_BG = new Color(32, 31, 33);
         MODULE_COLOR = new Color(37, 35, 39);
-        MODULE_TEXT = new Color(94, 95, 98);
+        MODULE_TEXT = new Color(104, 104, 120);
 
         TOGGLE_BUTTON_BG = new Color(59, 60, 65);
         TOGGLE_BUTTON_FILL = new Color(29, 27, 31);

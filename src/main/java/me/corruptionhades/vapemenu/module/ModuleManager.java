@@ -5,6 +5,7 @@ import me.corruptionhades.vapemenu.module.impl.misc.Plugins;
 import me.corruptionhades.vapemenu.module.impl.misc.TexturePack;
 import me.corruptionhades.vapemenu.module.impl.movement.Fly;
 import me.corruptionhades.vapemenu.module.impl.movement.Timer;
+import me.corruptionhades.vapemenu.module.impl.nimorant.NoRecoil;
 import me.corruptionhades.vapemenu.module.impl.nimorant.NoStartBorder;
 import me.corruptionhades.vapemenu.module.impl.nimorant.TriggerBot;
 import me.corruptionhades.vapemenu.module.impl.render.Arraylist;
@@ -32,6 +33,7 @@ public class ModuleManager {
         add(new NoStartBorder());
         add(new TriggerBot());
         add(new TexturePack());
+        add(new NoRecoil());
     }
 
     public void add(Module m) {

@@ -10,9 +10,19 @@ import net.minecraft.network.Packet;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.EntityHitResult;
 
+import java.awt.*;
+import java.awt.event.MouseEvent;
+
 public class TriggerBot extends Module {
+    Robot robot;
     public TriggerBot() {
-        super("ValoTriggerBot", "Right-clicks whenever you hover over a player.", Category.NIMORANT);
+        super("ValoTriggerBot", "Auto-shoots", Category.NIMORANT);
+        try {
+            robot = new Robot();
+        } catch (Exception err){
+            err.printStackTrace();
+            robot = null;
+        }
     }
 
     @EventTarget
@@ -21,10 +31,11 @@ public class TriggerBot extends Module {
             if(mc.interactionManager==null) return;
             if(mc.crosshairTarget==null) return;
             Entity target = ((EntityHitResult)mc.crosshairTarget).getEntity();
-            if(target!=null) mc.interactionManager.interactEntity(mc.player, target, Hand.MAIN_HAND);
-        } catch(Exception exc){
-            sendMsg("&d[&cERR&d]&f An error occurred. ("+exc.getMessage()+")");
-        }
+            try {
+                robot.mousePress(MouseEvent.BUTTON3_DOWN_MASK);
+                robot.mouseRelease(MouseEvent.BUTTON3_DOWN_MASK);
+            } catch (Exception ignored) {}
+        } catch(Exception ignore){}
     }
 
 }
