@@ -7,7 +7,8 @@ public enum Category {
     PLAYER("Player"),
     MISC("Misc"),
     HIDDEN("Hidden"),
-    NIMORANT("Nimorant");
+    NIMORANT("Nimorant"),
+    NIMNITE("Nimnite");
 
     public String name;
 

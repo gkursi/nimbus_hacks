@@ -9,7 +9,7 @@ import net.minecraft.network.packet.s2c.play.*;
 
 public class NoStartBorder extends Module {
     public NoStartBorder() {
-        super("NoStartBorder", "Removes the game start border in Nimorant", Category.NIMORANT);
+        super("NoStartBorder", "Remove start border", Category.NIMORANT);
     }
 
     @EventTarget

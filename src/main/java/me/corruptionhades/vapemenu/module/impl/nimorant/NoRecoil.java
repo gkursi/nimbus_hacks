@@ -13,10 +13,10 @@ public class NoRecoil extends Module {
     }
 
     @EventTarget
-    public void onPacketReceived(PacketReceivedEvent e){
-        Packet<?> p = e.getPacket();
-        if(p instanceof LookAtS2CPacket lap){
-            e.setCancelled(true);
+    public void onPacketReceived(PacketReceivedEvent event){
+        Packet<?> packet = event.getPacket();
+        if(packet instanceof LookAtS2CPacket){
+            sendMsg("LookAt packet received! ----------------------------");
         }
     }
 }

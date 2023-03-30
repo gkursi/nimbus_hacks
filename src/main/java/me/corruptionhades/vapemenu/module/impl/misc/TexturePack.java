@@ -8,7 +8,7 @@ import net.minecraft.network.packet.s2c.play.ResourcePackSendS2CPacket;
 
 public class TexturePack extends Module {
     public TexturePack() {
-        super("GetTexturePack", "(Requires re-joining)", Category.MISC);
+        super("TexturePack", "(Requires re-joining)", Category.MISC);
     }
 
     @EventTarget
